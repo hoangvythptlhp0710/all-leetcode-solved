@@ -1,0 +1,33 @@
+1, Big O: Độ phức tạp của thuật toán
+    - Để đánh giá 1 chương trình có tốt và hiệu quả hay không
+    => Time Complexity
+    => Space Complexity
+
+2, Space Complexity
+    - Là bộ nhớ mà chương trình / thuật toán cần sử dụng khi thực thi chương trình đó
+        - O(1): Nếu chỉ sử dụng 1 bộ nhớ cố định.
+        - O(n), O(n^2),...: Thay đỏi theo input của bài toán
+    - Mục tiêu: Tìm được một phương án tối ưu (bộ nhớ) cho một vấn đề nào đó.
+    - Giải quyết vấn đề về bộ nhớ:
+        - Tối ưu cách làm / phương pháp.
+        - Nâng cấp bộ nhớ. (*)
+
+3, Time Complexity
+    - Để miêu tả mức độ nhanh chậm của một chương trình => Big O Notation
+    - Định nghĩa: là tổng thời gian / số phép tính toán mà chương trình cần để thực thi chương trình.
+
+4, Big O Notation
+    - Định nghĩa: g(n) được gọi là O của f(n) nếu tồn tại C lớn hơn 0 và không phụ thuộc vào n và n0 sao cho với mọi n > n0, ta luôn có:
+            f(n) <= C.g(n)
+
+5, Các độ phức tạp cơ bản
+    - O(1): Độ phức tạp hằng số (constant complexity)
+    - O(log n): Độ phức tạp loga
+    - O(n): Độ phức tạp tuyến tính (linear complexity)
+    - O(n^k): Độ phức tạp đa thức
+    - O(k^n): Độ phức tạp hàm mũ
+    - Quy tắc cộng:
+        O = O(k1) + O(k2)
+    - Quy tắc nhân: Một process nằm trong 1 process khác
+        O = O(k1) * O(k2)
+

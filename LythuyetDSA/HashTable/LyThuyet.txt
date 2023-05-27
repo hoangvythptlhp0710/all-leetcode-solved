@@ -1,0 +1,36 @@
+1. Định nghĩa
+    - Bài toán: Ta có một tập tên người và số điện thoại. Làm sao từ tên người, ta có thể tra được số điện thoại nhanh nhất có thế?
+    - Hash Table: is a data structure which organizes using hash functions in order to support quick insertion and search
+
+2. Design a Hash Function
+    - The hash function will depend on the range of key values and the number of buckets.
+
+3. Collision Resolution
+    - Trường hợp lý tưởng hash function có thể tạo ra maping 1-1, nhưng đa phần sẽ không được => collision
+    - Để xử lý các collísion tạo ra bởi hash function, ta sử dụng linked list hoặc array tại mỗi bucket.
+
+4. Ứng dụng của Hash Table
+    - Hash-Set: Thường để quản lý 1 tập các keys.
+    => Base Qs:  Kiếm phần tử (key) đã tồn tại hay chưa
+
+    - Hash-Map: Thường để quản lí 1 tập các cặp key-value
+    => Base Qs: Đếm số lương xuất hiện của các phần tử
+
+5. Design a HashSet
+    - HashSet operations:
+        - hashFunctions(int key): Chuyển từ key về hashValue
+        - add(int key): Thêm 1 key vào Set
+        - remove(int key): Xóa key trong Set
+        - contains(int key): Kiểm tra xem có key đó trong set hay không
+
+6. Design a HashMap
+    - HashMap operations:
+        - hashFunctions(int key): Chuyển từ key về hashValue
+        - put(int key, int value): Thêm 1 cặp key-value vào Map
+        - remove(int key): Xóa cặp key-value trong Map
+        - get(int key): Trả về value của phần tử có khóa key trong Map.
+
+
+
+
+

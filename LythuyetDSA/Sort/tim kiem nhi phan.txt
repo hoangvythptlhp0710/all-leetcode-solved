@@ -1,0 +1,14 @@
+1. Định nghĩa:
+    - Kỹ thuật tìm kiếm nhị phân chỉ áp dụng được với mảng đã sắp xếp
+    - Ví dụ:
+        Tìm tới 1 trang nào đó của quyển sách
+        Tìm số báo danh/tên trên 1 bảng thông báo
+
+2. Ý tưởng
+    - Chia để trị: chia đôi mảng ra để tìm giá trị cần tìm
+            - nếu giá trị ở giữa nhỏ hơn giá trị bên trái (phải) thì xét mảng bên phải(trái) và lặp lại cho đến khi tìm được giá trị cần tìm
+
+3. Cài đặt thuật toán:
+    - có thể sử dụng 2 cách:
+        * Sử dụng vòng lặp
+        * Sử dụng đệ quy

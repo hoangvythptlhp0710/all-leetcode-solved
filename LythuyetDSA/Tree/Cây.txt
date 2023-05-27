@@ -1,0 +1,49 @@
+1. Định nghĩa:
+    -Tree: là cấu trúc dữ liệu quản lí 2 node trở lên
+    - Binary Tree: là cấu trúc dữ liệu quản lí 2 node mỗi 1 parents
+
+2. Ứng dụng của Tree:
+    - Cây thu mục trong ổ cứng máy tính
+    - Mục lục
+    - Gia phả của một dòng họ
+    - Biểu thức toán học
+
+3. Phân loại cây:
+    - Dựa trên số child node: +, N-ary Tree
+                              +, Ternary Tree
+                              +, Binary Tree
+    - Dựa trên tính chất của cây: +, Cây nhị phân suy biến
+                                  +, Cây nhị phân hoàn chỉnh với độ cao là 2^h
+                                  +, Cây nhị phân gần hoàn chỉnh
+                                  +, Cây nhị phân tìm kiếm: Thuận lợi cho bài toán tìm kiếm
+                                  +, AVL(Self-balancing Tree): là cây BST mà tại node bất kí, chiều cao của cây con trá và cây con phải lệch nhau không quá 1 đơn vị
+
+4. Biểu diễn cây nhị phân
+    - Sử dụng cấu trúc liên kết
+    - Sử dụng cấu trúc mảng
+
+5. Các thao tác
+    - Xây dựng + tạo cây
+    - Thêm, xóa Node trên cây
+    - Tìm kiếm trên cây, khảo sát/ duyệt cây
+
+
+6. Duyệt cây BST
+    - Có 3 cách duyệt cây:
+        +, pre-order Traversal: [Root -> Left -> Right]
+        +, in-order Traversal: [Left -> Root -> Right]
+        +, post-order: [Left -> Right -> Root]
+
+7. Xóa node trong cây BST
+    - B1: xác định node cần xóa
+    - B2: xóa node cần xóa => có những trường họp sau
+        +, 1. Node cần xóa không có node con (node lá)
+        +, 2. Node cần xóa có một node con
+        +, 3. Node cần xóa có 2 node con:
+            ), Thay bởi trái cùng của cây con bên phải
+            ), Thay bởi phải cùng của cây con bên trái
+
+
+
+
+

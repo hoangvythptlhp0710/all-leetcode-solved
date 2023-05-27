@@ -1,0 +1,5 @@
+Có 2 thư viện: Arrays.sort và Collections.sort
+A. Arrays.sort
+   - Sắp xếp cho một mảng các phần tử
+   - Sử dụng với Comparable
+   - Sử dụng với Comparator

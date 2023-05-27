@@ -1,0 +1,21 @@
+11. Định nghĩa
+     - Queue - Hàng đợi: là một cấu trúc dữ liệu hoạt động theo nguyên tắc FIFO (First-In-First-Out)
+     - Stack - Ngăn xếp: Là một cấu trúc dữ liệu hoạt động theo nguyên tắc LIFO (Last-In-First-Out)
+
+ 2. Use - Ứng dụng:
+    - Queue: ứng dụng vào thuật toán tìm kiếm theo chiều rộng (BFS),...
+    - Stack: ứng dụng vào thuật toán tìm kiếm theo chiều sâu (DFS),...
+
+ 3. Implement - Cài đặt:
+    - Các thao tác chính khi làm việc với SnQ (Stack And Queue) là:
+        +, push: Thêm vào một phần tử
+        +, pop: Lấy ra một phần tử
+        +, isFull: Kiểm tra SnQ đã đầy chưa (array)
+        +, isEmpty: Kiểm tra SnQ có empty hay không
+        ......
+    => Array: Sử dụng một mảng array để làm buffer (bộ nhớ đệm) cho SnQ
+        Ưu điểm: Dễ cài đặt (implement)
+        Nhược điểm: Bộ nhớ bị giới hạn và không tối ưu
+    => Linked List: Sử dụng Linkeđ List để lưu trữ cho SnQ
+        Ưu điểm: Tối ưu về mặt bộ nhớ
+        Nhược điểm: Implêmnt khó hơn sử dụng array

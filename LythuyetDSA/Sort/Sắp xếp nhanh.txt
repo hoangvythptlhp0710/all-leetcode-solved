@@ -1,0 +1,14 @@
+1. Ý tưởng (Đại diện cho đệ quy)
+    - b1: chọn khóa (thường là chọn phần tử ở giữa mảng)
+    - b2: phân bố lại mảng theo khóa: 1 phần nhỏ hơn khóa, 1 phần lớn hơn khóa
+    - b3: chia mảng ra thành 2 phần cho đến khi mảng con chỉ còn chứa 1 phần tử
+    - b4: lặp lại b1 cho đến khi các mảng con đã được sắp xếp
+    - b5: chập các mảng con vào => các mảng con đã được sắp xếp
+
+2. Chi tiết thuật toán:
+    - Sau khi chọn khóa của mảng, chọn 2 biến đầu mảng và cuối mảng làm iLeft và iRight
+        + Chừng nào iLeft < key => tiếp tục dịch chuyển sang phải để tìm được phần tử lớn hơn
+        + Chừng nào iRight > Key => tiép tục dịch chuyển sang trái để tìm được phần tử nhỏ hơn
+        => Đổi chỗ iL và iR cho nhau
+        Dừng lại khi iR > iL
+

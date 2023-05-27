@@ -1,0 +1,35 @@
+1. Khái niệm Stream
+Stream được giới thiệu từ bản java 8 và được nằm trong gói java.util.stream.
+Stream đại diện cho một chuỗi các giá trị và phục vụ nhiều chức năng tổng hợp
+để thao tác với dữ liệu như duyệt, tìm giá trị lớn (bé) nhất, sorting, filter,
+hay limit. Stream có rất nhiều methods đa dạng và chúng có thể được kết hợp với
+nhau, một vài trong số chúng trả về kiểu Stream được gọi là intermediate operations
+ và một số khác trả về kiểu non-stream(int, long, list, arrays,…) được gọi là terminal operations.
+
+- Các tính chất của Stream:
+    +, Stream không phải là một cấu trúc dữ liệu, đầu vào của Stream có thể là các Colllections (Arraylist, Set, LinkedList,…), Arrays và các kênh Input/Output.
+    +, Stream không làm thay đổi dữ liệu gốc mà chỉ trả về kết quả thông qua các methods.
+    +, Về cơ bản các method của stream được phân làm 2 loại là hoạt động trung gian(Intermediate Operation) và hoạt động đầu cuối(Terminal Operation).
+
+2. Các methods trong Stream
+2.1. Terminal Ops
+- Các hoạt động đầu cuối này gồm các method có kiểu trả về khác stream như kiểu nguyên thủy (primitive), đối tượng
+(String, Integer, ...) hay collections.
+- Các hoạt động đầu cuối này sẽ thực hiện các thao tác trên stream và trả về kết quả cuối cùng.
+    - Collect method: Dùng để trả về kết quả của stream dưới dạng List hoặc Set.
+    - forEach method: DÙng để duyệt qua mọi phần tử trong stream
+    - Reduce method: Reduce() method với 1 trong 2 tham số truyền vào là method reference, dùng để
+    kết hợp các phần tử thành mọt giá trị đơn cùng kiểu với dữ liệu ban đầu.
+    - Max, min method: Trả về giá trị lớn nhất hoặc bé nhất trong các phần tử.
+
+2.2. Intermediate Ops
+- Mỗi hoạt động trung gian này được thực thi một cách rieng biệt và có kết quả trả về cũng là một Stream. Do
+đó ta có thể kết hợp nhiều intermediate methods với nhau. Sau đây là một số intermediate methods:
+    - Distinct method: Trả về một stream mới chỉ chứa các phần tử không trùng lặp.
+    - Map method: map method được sử dụng để trả về một stream mà ở đó các phần tử đã được thay đổi theo cách
+    người dùng tự định nghĩa.
+    - Filter method: DÙng để lọc và xóa bỏ các phần tử với điều kiện do người dùng tự định nghĩa.
+    - Sorted method: Dùng để sắp xếp các phần tử
+    - Limit method: limit(n) với tham số đầu vao là số nguyên không âm n nó sẽ trả về một stream chứa n
+    phần tử đầu tiên
+    - Skip method: skip(n) với tham số truyền vào là số nguyên không âm n nó sẽ trả về các phần tử còn lại đằng sau n phần tử đầu tiên

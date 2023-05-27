@@ -1,0 +1,33 @@
+QUY HOẠCH ĐỘNG
+
+1, Bài toán Fibonacci
+    - Dãy fibo: f(n) = [1 khi n = 0 || n == 1]
+                       [f(n-1) + f(n-2) khi n >= 2]
+    - code (đệ quy): public static int fibo(int n){
+                            if (n <= 1) return 1;
+                            }
+                            return fibo(n-1) + fibo(n-2);
+                      public static void main(String[] args){
+                            int n = 5;
+                            System.out.println(fibo(n));
+                       }
+    => Nhược điểm: Số bài toán con tăng theo cấp số nhân -> nếu tính số lớn máy sẽ cho kết quả rất chậm
+    => Chuyển sang cách khác
+    - code (mảng): public static int fibo(int n){
+                          double [] f = new int [10001];
+                          }
+                          F[0] = 0;
+                          F[1] = 1;
+                          for (int i = 2; i <= n; i++){
+                               F[i] = F[i-1] + F[i-2];
+                          }
+                          return F[n];
+                    public static void main(String[] args){
+                           int n = 5;
+                            System.out.println(fibo(n));
+                            }
+2, Các bước giải bài toán quy hoạch động:
+    a, Định nghĩa bài toán con nhỏ nhất
+    b, Giải bài toán con cơ sở
+    c, Xác định đáp án bài toán
+    d, Xác định công thức truy hồi

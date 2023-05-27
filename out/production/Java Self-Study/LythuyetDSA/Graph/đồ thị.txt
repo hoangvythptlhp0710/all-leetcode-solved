@@ -1,0 +1,53 @@
+1. Định nghĩa:
+    - là những node và cạnh được nối với nhau
+    - Ví dụ: mạng máy tính, bản đồ (Google Map), cấu trúc hóa học của phân tử
+
+2. Phân loại:
+    - Theo số cạnh giữa 2 đỉnh: +, Đơn đồ thị
+                                +, Đa đồ thị
+    - Tính có hướng của cạnh: +, Đồ thị vô hướng
+                              +, Đồ thị có hướng
+    - Trọng số: +, Đò thị KHÔNG có trọng số
+                +, Đồ thị CÓ trọng số
+
+3. Biểu diễn đồ thị:
+    - Ma trận kề
+        +, Áp dụng: Đơn đồ thị, đồ thị Vô hướng/Có hướng, Có trọng số
+    - Danh sách kề:
+        +, Áp dụng: Đơn đò thị, đồ thị Vô hướng/Có hướng, KHÔNG CÓ trọng số
+    - Danh sách cạnh:
+        +. Áp dụng: Đơn đồ thị, đồ thị vô hướng (ít gặp với đồ thị có hướng)
+
+4. Một số tính chất của đồ thị:
+    - Đồ thị liên thông/không liên thông
+    - Đồ thị có tồn tại chu trình
+
+5. Tìm kiếm trên đồ thị:
+    - Có 2 cách phổ biến:
+        +, BFS: Breadth First Search (Queue)
+        +, DFS: Depth First Search (Stack|Recursion)
+
+6. Depth First Search (Stack|Recursion)
+    - Thuật toán:
+        + Add đỉnh đầu vào stack
+        + Đánh dấu đã duyệt vào đỉnh đầu
+        while(!stack.isEmpty()){
+            u = stack.pop();
+            process(u); // Xử lý u
+            - Add tất cả các đỉnh kề v với u mà chưa được duyệt vào stack.
+            - Đánh dấu đã duyệt v.
+        }
+7. Breadth First Search (Queue)
+    - Thuật toán:
+        + Add đỉnh đầu vào queue
+        + Đánh dấu đã duyệt vào đỉnh đầu
+        while(!queue.isEmpty()){
+            u = queue.pop();
+            process(u); // Xử lý u
+            - Add tất cả các đỉnh kề v với u mà chưa được duyệt vào queue.
+            - Đánh dấu đã duyệt v.
+        }
+
+8. Thuật toán Dijkstra
+
+
